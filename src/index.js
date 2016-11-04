@@ -121,21 +121,6 @@ var App = React.createClass({
           <div className="col-sm-2">
             <h1><img className="img-responsive" this.prop.state.attr("src","http://golearntocode.com/images/cards/" + hand[0] + ".png")/></h1>
           </div>
-          <div className="col-sm-2">
-            <h1><img className="img-responsive" src={"http://golearntocode.com/images/cards/ace_of_hearts.png"} /></h1>
-          </div>
-          <div className="col-sm-2">
-            <h1><img className="img-responsive" src={"http://golearntocode.com/images/cards/ace_of_hearts.png"} /></h1>
-          </div>
-          <div className="col-sm-2">
-            <h1><img className="img-responsive" src={"http://golearntocode.com/images/cards/ace_of_hearts.png"} /></h1>
-          </div>
-          <div className="col-sm-2">
-            <h1><img className="img-responsive" src={"http://golearntocode.com/images/cards/ace_of_hearts.png"} /></h1>
-          </div>
-          <div className="col-sm-2">
-            <h1><a href="#" className="btn btn-success" onClick={this.dealDeck}>Deal</a></h1>
-          </div>
         </div>
       </div>
     )
