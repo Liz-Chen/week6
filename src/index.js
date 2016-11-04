@@ -77,7 +77,7 @@ var fiveCards = deck.splice(0,5);
 var Hand = React.createClass({
   render: function() {
     this.setState(fiveCards.forEach(cards, index, function(cards, index){
-      "c" + (index + 1)).attr("src","http://golearntocode.com/images/cards/" + card[] + ".png")
+      this.state.attr("src","http://golearntocode.com/images/cards/" + fiveCards[] + ".png")
     })
   }
 })
