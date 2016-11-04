@@ -32,7 +32,7 @@ window.getDeck = function() {
 }
 // END OF STUFF TO NOT MODIFY
 
-var hand = deck.splice(0,5);
+//var hand = deck.splice(0,5);
 
 //var cardImg = React.createClass({
 //  render: function() {
@@ -43,12 +43,6 @@ var hand = deck.splice(0,5);
 //        </div>
 //      </div>
 //    )
-//  }
-//})
-
-//var fiveCards = deck.splice(0,5)
-//fiveCards.forEach(card, index, function(card, index){
-//    $("#c#" + (index + 1)).attr("src","http://golearntocode.com/images/cards/" + card] + ".png")
 //  }
 //})
 
@@ -78,29 +72,20 @@ var hand = deck.splice(0,5);
 //    )
 //  }
 //})
+var fiveCards = deck.splice(0,5);
 
 var Hand = React.createClass({
   render: function() {
-    return(
-      <div>
-        a new hand
-//          {this.props.cards.map(function(cards) {
-//            return (
-//                <CardImg image = {.poster}
-//                 title= {movie.title}
-//                 genre= {movie.genre}
-//                 runtime= {movie.runtime}/>
-//            )
-          })}
-        </div>
-    )
-  })
-
+    fiveCards.forEach(card, index, function(card, index){
+      "c#" + (index + 1)).attr("src","http://golearntocode.com/images/cards/" + card[] + ".png")
+    }
+  }
+})
 
 var App = React.createClass({
   dealDeck: function(){
     alert('You clicked it!');
-//    var deck = this.state.getDeck().shuffle();
+    var deck = this.state.getDeck().shuffle();
 //    <getHand
     this.setState(Hand);
   },
