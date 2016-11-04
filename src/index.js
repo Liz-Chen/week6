@@ -82,9 +82,9 @@ var hand = deck.splice(0,5);
 var Hand = React.createClass({
   render: function() {
     return(
-      <div className="hand col-sm-8">
-        <div className="row">
-          {this.props.cards.map(function(cards) {
+      <div>
+        a new hand
+//          {this.props.cards.map(function(cards) {
 //            return (
 //                <CardImg image = {.poster}
 //                 title= {movie.title}
@@ -93,10 +93,8 @@ var Hand = React.createClass({
 //            )
           })}
         </div>
-      </div>
     )
-  }
-})
+  })
 
 
 var App = React.createClass({
@@ -107,17 +105,21 @@ var App = React.createClass({
     this.setState(Hand);
   },
   getInitialState: function() {
-    return {hand};
+    return {cardsDealt: []};
   },
   render: function() {
-    <getHand/>,
+    var newHand = this.state.cardsDealt;
+    newHand.push(<Hand/>);
+    this.setState({cardsDealt: newHand});
+  },
+  render: functon() {
+//    <getHand/>,
     return (
       <div>
         <h1>Welcome to the KIEI-924 Casino!</h1>
         <div className="row">
           <div className="col-sm-2">
-            <h1><img className="img-responsive" src={this.state.hand} /></h1>
-            //$("#c1").attr("src","http://golearntocode.com/images/cards/" + c1 + ".png")
+            <h1><img className="img-responsive" this.prop.state.attr("src","http://golearntocode.com/images/cards/" + hand[0] + ".png")/></h1>
           </div>
           <div className="col-sm-2">
             <h1><img className="img-responsive" src={"http://golearntocode.com/images/cards/ace_of_hearts.png"} /></h1>
